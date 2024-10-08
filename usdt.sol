@@ -4,7 +4,7 @@ import "@openzeppelin/contracts/token/ERC20/ERC20.sol";
 import "@openzeppelin/contracts/access/Ownable.sol";
 
 contract USDC is ERC20, Ownable {
-    constructor() ERC20("USDT Coin", "USDT") Ownable(msg.sender) {
+    constructor() ERC20("USDT Coin", "USDT") Ownable(msg.sender) { //for usdc change to ERC20("USDC Coin", "USDC")
         _mint(msg.sender, 10000000 * 10 ** decimals()); 
     }
 
